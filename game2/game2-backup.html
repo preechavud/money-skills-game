@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survival Budget - 2 Players VS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+  body {
+    background-color: #f1f3f5 !important;
+    font-family: 'Prompt', sans-serif;
+    color: #212529;
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 44, 95, 0.05),
+      rgba(0, 44, 95, 0.05) 1px,
+      transparent 1px,
+      transparent 20px
+    ) !important;
+    background-size: 20px 20px !important;
+    margin: 0;
+  }
+
+  h1, h2 {
+    color: #002c5f;
+  }
+
+  .player {
+    width: 40%;
+  }
+
+  .vs-graphic img.vs-image {
+    width: 80px;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #868e96;
+    margin: 2rem 0 1rem;
+  }
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="start-screen" id="startScreen">
+  <h1>ใส่ชื่อผู้เล่น</h1>
+  <input type="text" id="name1" placeholder="ชื่อผู้เล่น 1">
+  <input type="text" id="name2" placeholder="ชื่อผู้เล่น 2">
+  <button id="startBtn">เริ่มเกม!</button>
+</div>
+
+<h1 id="gameTitle" class="hidden">Survival Budget: 2 Players</h1>
+<div class="container hidden" id="gameContainer">
+  <div class="player" id="player1">
+    <h2 id="player1Name"></h2>
+    <div class="stats" id="stats1"></div>
+    <div>จ่ายหนี้: <input type="number" id="debtPayment1" min="0" placeholder="ขั้นต่ำ 2,000" /></div>
+    <div class="history" id="history1"></div>
+  </div>
+  <div class="vs-graphic">
+    <img src="vs.png" alt="VS" class="vs-image">
+  </div>
+  <div class="player" id="player2">
+    <h2 id="player2Name"></h2>
+    <div class="stats" id="stats2"></div>
+    <div>จ่ายหนี้: <input type="number" id="debtPayment2" min="0" placeholder="ขั้นต่ำ 2,000" /></div>
+    <div class="history" id="history2"></div>
+  </div>
+</div>
+
+<div style="text-align: center; margin: 1rem;">
+  <button id="nextMonthBtn" class="hidden">ดำเนินการเดือนนี้</button>
+</div>
+
+<footer>© 2025 Bank of Thailand (BOT) | Polygon Wizard Co., Ltd.</footer>
+
+<script src="game.js"></script>
+</body>
+</html>

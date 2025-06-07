@@ -1,0 +1,73 @@
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  margin-top: 1rem;
+  color: #002c5f;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+.player {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 45%;
+}
+.stats {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.history {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #e9ecef;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: #004085;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+button:hover {
+  background: #002c5f;
+}
+
+.start-screen {
+  text-align: center;
+  padding: 2rem;
+}
+.start-screen input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 150px;
+}
+.vs-graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vs-image {
+  width: 60px;
+  height: auto;
+}
+.hidden {
+  display: none;
+}
